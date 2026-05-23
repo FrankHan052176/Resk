@@ -1,0 +1,56 @@
+{
+  "app": {
+    "signingConfigs": [
+      {
+        "name": "default",
+        "type": "HarmonyOS",
+        "material": {
+          "certpath": "/home/frankhan/.ohos/config/default_rustdesk_arkts_app_lTprqXBkbELnP67Ar6-uCjdWpPPN9bLepDpa_o1n_Vo=.cer",
+          "keyAlias": "debugKey",
+          "keyPassword": "0000001B4F9F79035379175275375F42EE6251AC3EA5A9893C1721BEC3228C61F654D74FDA7FFA352268CB",
+          "profile": "/home/frankhan/.ohos/config/default_rustdesk_arkts_app_lTprqXBkbELnP67Ar6-uCjdWpPPN9bLepDpa_o1n_Vo=.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "/home/frankhan/.ohos/config/default_rustdesk_arkts_app_lTprqXBkbELnP67Ar6-uCjdWpPPN9bLepDpa_o1n_Vo=.p12",
+          "storePassword": "0000001BF8EC2FDFDEDE61B9AE26118C921689782099D3F825C0F7C669A97D88EC6BF5659C36043A348719"
+        }
+      }
+    ],
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "default",
+        "targetSdkVersion": "6.1.0(23)",
+        "compatibleSdkVersion": "6.1.0(23)",
+        "runtimeOS": "HarmonyOS",
+        "buildOption": {
+          "strictMode": {
+            "caseSensitiveCheck": true,
+            "useNormalizedOHMUrl": true
+          }
+        }
+      }
+    ],
+    "buildModeSet": [
+      {
+        "name": "debug"
+      },
+      {
+        "name": "release"
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "entry",
+      "srcPath": "./entry",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    }
+  ]
+}
